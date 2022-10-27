@@ -20,5 +20,16 @@ namespace OOPracticeTest
             //then
             Assert.Equal("Cool Car: speed up 60 km/h", message);
         }
+
+        [Fact]
+        public void Should_return_message_when_speed_given_Truck_car_name_and_speed()
+        {
+            //given
+            Truck truck = new Truck("Big Truck", 60);
+            //when
+            string message = truck.SpeedUp();
+            //then
+            Assert.Equal("Big Truck: speed up 60 km/h", message);
+        }
     }
 }
