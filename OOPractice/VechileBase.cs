@@ -2,12 +2,18 @@
 {
     public class VechileBase
     {
-        protected string name;
-        protected int speed;
-        public VechileBase(string name, int speed)
+        private string name;
+        private int speed;
+        public string Name
         {
-            this.name = name;
-            this.speed = speed;
+            get { return name; }
+            set { name = value; }
+        }
+
+        public int Speed
+        {
+            get { return speed; }
+            set { speed = value; }
         }
 
         public string SpeedUp()
